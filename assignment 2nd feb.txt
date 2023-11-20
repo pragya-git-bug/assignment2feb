@@ -1,0 +1,77 @@
+Assignment 2nd feb
+
+Answer1
+In Java, when you create an array but do not explicitly initialize its elements, the elements of the array are automatically assigned default values based on their data types. Here are the default values for different data types in Java:
+
+Numeric Types (byte, short, int, long, float, double):
+
+Default value: 0
+char:
+
+Default value: '\u0000' (null character)
+
+boolean:
+
+Default value: false
+
+Object Types (including arrays of reference types):
+
+Default value: null
+
+Answer2
+In Java, the size of an array must be a non-negative integer. 
+
+Answer3
+n Java, the memory for arrays is allocated in the heap memory, which is the area of the Java Virtual Machine (JVM) memory reserved for the runtime data, including objects. When you create an array in Java, memory is allocated to store the array elements, and a reference to that memory location is returned.
+
+Answer4
+Arrays in Java have certain limitations and disadvantages:
+
+Fixed Size
+Memory Wastage
+Continuous memory allocarion.
+
+Answer5
+In Java, an anonymous array is an array that is created without explicitly specifying its name. Anonymous arrays are usually used for a short duration and are not assigned to any variable. They are often used in method arguments or in situations where a temporary array is needed.
+public class AnonymousArrayExample {
+    public static void main(String[] args) {
+        // Passing an anonymous array to a method
+        printNumbers(new int[]{1, 2, 3, 4, 5});
+
+        // Using an anonymous array in an expression
+        int sum = calculateSum(new double[]{2.5, 3.0, 1.5});
+        System.out.println("Sum: " + sum);
+    }
+
+    // Method that takes an array as an argument
+    static void printNumbers(int[] numbers) {
+        System.out.print("Numbers: ");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+
+    // Method that uses an array in an expression
+    static int calculateSum(double[] values) {
+        int sum = 0;
+        for (double value : values) {
+            sum += value;
+        }
+        return sum;
+    }
+}
+
+Answer6
+In Java, there are several ways to traverse (iterate through) an array. Here are some common methods:
+
+Using a For Loop
+Using an Enhanced For Loop (Foreach Loop)
+Using Arrays.asList() and forEach (for Arrays of Objects)
+
+Answer7
+length is a property of arrays in Java. It is used to get the length or size of an array.
+
+It is not a method but a public final variable.
+
+length() is a method provided by the String class in Java. It is used to get the length (number of characters) of a string.
